@@ -33,7 +33,7 @@ void loop() {
     D3 = digitalRead(7);
     D0 = digitalRead(8);
     Q1= D1 || D3; // logic: (!D3&&D2&&!D1&&!D0) || (D3&&!D2&&!D1&&!D0);
-    Q0= D2 || D3; //logic: (!D3&&!D2&&D1&&!D0) || (D3&&!D2&&!D1&&!D0);
+    Q0= D2 || D3; // logic: (!D3&&!D2&&D1&&!D0) || (D3&&!D2&&!D1&&!D0);
     disp_encoder(Q1,Q0);   
 
 }
