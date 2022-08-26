@@ -1,12 +1,17 @@
+/*Code by Shreyash Chandra
+ August, 2022
+ under FWC program by IITH
+ Design 4x2 encoder */
+
 #include <Arduino.h>
 //Declaring all variables as integers
 int D0=0,D1=0,D2=0,D3=0;
 int Q1,Q0;
-//Code released under GNU GPL.  Free to use for anything.
+//output display with the help of pin 13 & a LED at pin 4
 void disp_encoder(int Q1, int Q0)
 {
-  digitalWrite(13, Q1); //LSB
-  digitalWrite(4, Q0); //MSB
+  digitalWrite(13, Q1); 
+  digitalWrite(4, Q0); 
   
     
 }
@@ -27,8 +32,8 @@ void loop() {
     D2 = digitalRead(6);
     D3 = digitalRead(7);
     D0 = digitalRead(8);
-    Q1= D1 || D3; 
-    Q0= D2 || D3; 
+    Q1= D1 || D3; // logic
+    Q0= D2 || D3; //logic
     disp_encoder(Q1,Q0);   
 
 }
