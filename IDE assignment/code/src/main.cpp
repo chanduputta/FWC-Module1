@@ -10,8 +10,8 @@ int Q1,Q0;
 //output display with the help of pin 13 & a LED at pin 4
 void disp_encoder(int Q1, int Q0)
 {
-  digitalWrite(13, Q1); 
-  digitalWrite(4, Q0); 
+  digitalWrite(13, Q1); //MSB
+  digitalWrite(4, Q0); //LSB
   
     
 }
@@ -30,8 +30,8 @@ void setup() {
 void loop() {
     D1 = digitalRead(5);
     D2 = digitalRead(6);
-    D3 = digitalRead(7);
-    D0 = digitalRead(8);
+    D3 = digitalRead(7); //LSB
+    D0 = digitalRead(8); //MSB
     Q0= D1 || D3; // logic: (!D3&&!D2&&D1&&!D0) || (D3&&!D2&&!D1&&!D0);
     Q1= D2 || D3; // logic: (!D3&&D2&&!D1&&!D0) || (D3&&!D2&&!D1&&!D0);
     disp_encoder(Q1,Q0);   
