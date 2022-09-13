@@ -1,3 +1,8 @@
+; Code by Shreyash Chandra
+; August, 2022
+; under FWC program by IITH
+; Design 4x2 encoder 
+
 .include "/home/shreyash/m328Pdef.inc"
 
 ;Configuring pin 13 (PB5)
