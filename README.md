@@ -1,4 +1,7 @@
 # FWC-Module1 
 Created For uploading Assignments
-### IDE-assignment 1
-Question: Design 4x2 encoder (with Arduino using IDE) 
+## first three assignments on:
+#### IDE
+#### Assembly
+#### AVR GCC
+Question: Design 4x2 encoder (with Arduino)
