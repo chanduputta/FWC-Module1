@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Problem Statement}{1}{}%
+\contentsline {section}{\numberline {2}Construction}{1}{}%
+\contentsline {section}{\numberline {3}solution}{1}{}%
+\contentsline {subsection}{\numberline {3.1}Case 1: Major Arc}{2}{}%
+\contentsline {subsection}{\numberline {3.2}Case 2: Minor Arc}{2}{}%
+\contentsline {section}{\numberline {4}Software}{2}{}%
+\contentsline {section}{\numberline {5}Conclusion}{2}{}%
