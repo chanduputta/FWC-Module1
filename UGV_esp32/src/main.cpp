@@ -9,7 +9,7 @@ void _setup() {
 
   Motor2.attach(15, 18, 19);  //Defining pins for Motor-1
 
-  Dabble.begin("Ravi");
+  Dabble.begin("esp32"); //Define name to the bluetooth connection
 }
 
 void _loop() {
