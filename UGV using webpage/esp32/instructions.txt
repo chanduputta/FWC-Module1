@@ -1,0 +1,14 @@
+Go to the codes folder and then run the following command:
+   pio run  
+   
+This command will create a frimware.bin file in .pio folder if your Vaman is already connected to your network then directly flash the vaman using following command:
+   pio run -t upload --upload-port <IP address of your Vaman>
+   
+If your Vaman is not connected to any network then copy the frimware.bin file and send it laptop using following command:
+   scp <source path> user@IPadddress:<destination path>
+   
+After copying the frimware.bin into laptop then flash it to the Vaman using UART with this command:
+   pio run -t nobuild -t upload
+
+After sucessfully flashing connect to your Vaman WiFi with the credentials you set in the code and then open browser and enter the IP of your Vaman in browser then it will open the HTML page you created in the code.
+From this HTML page you can control your ZK-2 Smart Car.
