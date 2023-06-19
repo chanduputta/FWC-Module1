@@ -64,3 +64,4 @@ out PortD,r23 ; PD4
 
 Start:
 rjmp Start
+;comment
